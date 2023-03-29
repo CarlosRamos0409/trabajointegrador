@@ -47,6 +47,9 @@ try {
 					System.out.println("El apostador acertó el pronóstico.");
 					puntos++;
 					break;
+				}else {
+					System.out.println("El apostador NO acertó el pronóstico.");
+					break;
 				}
 				
 			}
@@ -62,7 +65,10 @@ try {
 					System.out.println("El apostador acertó el pronóstico.");
 					puntos++;
 					break;
-				} 
+				} else {
+					System.out.println("El apostador NO acertó el pronóstico.");
+					break;
+				}
 			}
 		
 		}else{
@@ -73,6 +79,9 @@ try {
 				if (!(pronostico.getEmpate().equals(""))) {
 					System.out.println("El apostador acertó el pronóstico.");
 					puntos++;
+					break;
+				}else {
+					System.out.println("El apostador NO acertó el pronóstico.");
 					break;
 				}
 				
