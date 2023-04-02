@@ -5,19 +5,30 @@ import com.opencsv.bean.CsvBindByPosition;
 public class Pronosticos {
 
 	@CsvBindByPosition(position = 0)
-	private String equipo1;
+	private int id;
 	
 	@CsvBindByPosition(position = 1)
-	private String ganaEquipo1;
+	private String equipo1;
 	
 	@CsvBindByPosition(position = 2)
-	private String empate;
+	private String ganaEquipo1;
 	
 	@CsvBindByPosition(position = 3)
+	private String empate;
+	
+	@CsvBindByPosition(position = 4)
 	private String ganaEquipo2;
 			
-	@CsvBindByPosition(position = 4)
+	@CsvBindByPosition(position = 5)
 	private String equipo2;
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
 
 	public String getEquipo1() {
 		return equipo1;

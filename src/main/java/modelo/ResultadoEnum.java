@@ -5,17 +5,28 @@ import com.opencsv.bean.CsvBindByPosition;
 public class ResultadoEnum {
 
 	@CsvBindByPosition(position = 0)
-	private String equipo1;
+	private int id;
 	
 	@CsvBindByPosition(position = 1)
-	private int golesEquipo1;
+	private String equipo1;
 	
 	@CsvBindByPosition(position = 2)
-	private int golesEquipo2;
+	private int golesEquipo1;
 	
 	@CsvBindByPosition(position = 3)
+	private int golesEquipo2;
+	
+	@CsvBindByPosition(position = 4)
 	private String equipo2;
 
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}	
+	
 	public String getEquipo1() {
 		return equipo1;
 	}
