@@ -101,7 +101,7 @@ try {
 		
 			
 			}		
-		
+	System.out.println("--------------------------------------------------------");
 	System.out.println("El apostador obtuvo " + puntos + " aciertos.");
 		
 		
