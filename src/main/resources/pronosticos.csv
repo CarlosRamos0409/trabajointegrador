@@ -1,4 +1,9 @@
-1,Argentina,,,x,Arabia Saudita
-2,Polonia,,x,,MÃ©xico
-3,River,,x,,Boca
-4,Talleres,,x,,Belgrano
+PARTICIPANTE,EQUIPO1,GANAE1,EMPATE,GANAE2,EQUIPO2
+Mariana,Argentina,X,,,Arabia Saudita
+Mariana,Polonia,x,,,México
+Mariana,Argentina,X,,,México
+Mariana,Arabia Saudita,,,X,Polonia
+Pedro,Argentina,X,,,Arabia Saudita
+Pedro,Polonia,,,X,México
+Pedro,Argentina,X,,,México
+Pedro,Arabia Saudita,,X,,Polonia

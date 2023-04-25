@@ -5,7 +5,7 @@ import com.opencsv.bean.CsvBindByPosition;
 public class Pronosticos {
 
 	@CsvBindByPosition(position = 0)
-	private int id;
+	private String participante;
 	
 	@CsvBindByPosition(position = 1)
 	private String equipo1;
@@ -22,12 +22,12 @@ public class Pronosticos {
 	@CsvBindByPosition(position = 5)
 	private String equipo2;
 
-	public int getId() {
-		return id;
+	public String getParticipante() {
+		return participante;
 	}
 
-	public void setId(int id) {
-		this.id = id;
+	public void setParticipante(String participante) {
+		this.participante = participante;
 	}
 
 	public String getEquipo1() {
@@ -70,6 +70,16 @@ public class Pronosticos {
 		this.equipo2 = equipo2;
 	}
 
-	
+
+	public ResultadoEnum resultadoEquipo1() {
+		
+		if(!(this.ganaEquipo1.equals("")))
+			return ResultadoEnum.GANA;
+		
+		if(!(this.ganaEquipo2.equals("")))
+			return ResultadoEnum.PIERDE;
+		
+		return ResultadoEnum.EMPATA;
+	}
 	
 }
